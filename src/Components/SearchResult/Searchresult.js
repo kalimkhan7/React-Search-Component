@@ -1,11 +1,8 @@
 import React from 'react';
+import classes from './Searchresult.css'
 
 const searchresult = (props) => {
-    return (
-        <div>
-            <p>{props.stateName}</p>
-        </div>
-    )
+    return <p className={classes.result}>{props.dataList}</p>
 }
 
 export default searchresult;

@@ -1,0 +1,26 @@
+.Searchbar input{
+    padding: 12px;
+    /* margin-top: 10%; */
+    font-size: 17px;
+    border: solid 2px black;
+    border-radius: 50px 50px;
+    width: 50%;
+}
+
+.SearchIcon {
+    font-size: 25px;
+    position: relative;
+    left: -4%;
+    /* right: 52%; */
+    padding: 1rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.Searchbar{
+    position: relative;
+}
+
+
+
+ 
