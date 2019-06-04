@@ -7,16 +7,19 @@ import Cockpit from '../Components/Cockpit/Cockpit'
 class App extends React.Component {
 
   static defaultProps = {
-    placeholder: "Search"
+    placeholder: "Search",
+    alignicon: "right",
+    disableicon: "false"
   }
 
   state = {
-    alignIcon: this.props.alignIcon,
+   
     searchOnKey: this.props.searchOnKey,
-    disableIcon: this.props.disableIcon,
     data: Data,
     result: [],
-    filteredKeyData: []
+    filteredKeyData: [],
+    alignicon: this.props.alignicon,
+    disableicon: this.props.disableicon
     
   }
 
@@ -59,11 +62,14 @@ class App extends React.Component {
   render() {
     return (
       <div className={classes.App}>
+        
         <Cockpit
           changed={this.onChangeHandler}
           result={this.state.result}
           searchOnKey={this.state.searchOnKey}
           placeholder={this.props.placeholder}
+          alignicon={this.state.alignicon}
+          disableicon= {this.state.disableicon}
         />
       </div>   
     );

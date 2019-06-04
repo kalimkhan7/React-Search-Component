@@ -1,4 +1,38 @@
-.Cockpit Searchbar{
-    background-color: black;
-    padding: 50px;
+
+.Searchresults {
+    padding-left: 2rem;
+    text-align: left;
 }
+
+.Cockpit{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+@media (max-width:1200px){
+    .Cockpit{
+        width: 55%;
+    }
+}
+
+@media (max-width:992px){
+    .Cockpit{
+        width: 65%;
+    }   
+}
+
+@media (max-width:768px){
+    .Cockpit{
+        width: 80%;
+    }   
+}
+
+@media (max-width:576px){
+    .Cockpit{
+        width: 90%;
+    } 
+}
+
+

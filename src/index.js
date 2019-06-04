@@ -7,10 +7,10 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <App 
-    alignIcon="left"
+    alignicon="right"
     searchOnKey="name"
     dataList= {Data}
-    disableIcon="true"
+    disableicon= "false"
     placeholder="Search for"
   />,
   document.getElementById('root')

@@ -7,13 +7,17 @@ const cockpit = (props) => {
 
     return (
         <div className={classes.Cockpit}>
-            <p className={classes.heading}>Type Here!</p>
             <Searchbar
             changed={props.changed}
-            placeholder={props.placeholder}/>
-            <Searchresults 
-            searchOnKey={props.searchOnKey}
-            data={props.result}/> 
+            placeholder={props.placeholder}
+            alignicon={props.alignicon}
+            disableicon={props.disableicon}/>
+           
+           <div className={classes.Searchresults}>
+                <Searchresults 
+                searchOnKey={props.searchOnKey}
+                data={props.result}/> 
+           </div>
         </div>
     )
 }
